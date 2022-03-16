@@ -1,0 +1,13 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gstalker <dreamstalker1003@qq.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jni = "0.19.0"
+
+[lib]
+crate_type = ["staticlib"]

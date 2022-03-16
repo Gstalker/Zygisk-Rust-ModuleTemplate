@@ -12,8 +12,8 @@ LOCAL_PATH := $(call my-dir)
 # If you do not want to use libc++, link to system stdc++
 # so that you can at least call the new operator in your code
 
- include $(CLEAR_VARS)
- LOCAL_MODULE := example
- LOCAL_SRC_FILES := example.cpp
- LOCAL_LDLIBS := -llog -lstdc++
- include $(BUILD_SHARED_LIBRARY)
+include $(CLEAR_VARS)
+LOCAL_MODULE := example
+LOCAL_SRC_FILES := example.cpp
+LOCAL_LDLIBS := -llog -lstdc++
+include $(BUILD_SHARED_LIBRARY)
