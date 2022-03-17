@@ -1,13 +1,14 @@
 [package]
-name = "rust"
+name = "zygisk"
 version = "0.1.0"
 edition = "2021"
-authors = ["Gstalker <dreamstalker1003@qq.com>"]
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Kazurin Nanako <71819243+Kazurin-775@users.noreply.github.com>"]
 
 [dependencies]
+bitflags = "1.3.2"
 jni = "0.19.0"
+log = "0.4.14"
 
 [lib]
-crate_type = ["staticlib"]
+name = "zygisk"
+crate_type = ["dylib"]

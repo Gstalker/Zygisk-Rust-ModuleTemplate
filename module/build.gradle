@@ -6,11 +6,6 @@ plugins {
 android {
     ndkVersion '23.0.7421159'
     compileSdkVersion 31
-    externalNativeBuild {
-        ndkBuild {
-            path("jni/Android.mk")
-        }
-    }
     defaultConfig {
         minSdkVersion 26  // android 8
         targetSdkVersion 31 // android 12
@@ -22,9 +17,8 @@ android {
 
 cargo {
     module  = "./rust"       // Or whatever directory contains your Cargo.toml
-    libname = "rust"          // Or whatever matches Cargo.toml's [package] name.
+    libname = "zygisk"          // Or whatever matches Cargo.toml's [package] name.
     targets = ["arm", "arm64", "x86", "x86_64"]  // See bellow for a longer list of options
-    targetIncludes = ["librust.a"]
 }
 
 
