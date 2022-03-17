@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    ndkVersion '23.0.7421159'
+    ndkVersion '22.1.7171670'
     compileSdkVersion 31
     defaultConfig {
         minSdkVersion 26  // android 8
