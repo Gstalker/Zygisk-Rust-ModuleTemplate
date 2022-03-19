@@ -38,7 +38,7 @@ rustup target add x86_64-linux-android      # for x86_64
 
 ### 3. Build Project with Gradle
 
-Use Rust-Android-Gradle: https://github.com/mozilla/rust-android-gradle
+Gradle build script support by: Rust-Android-Gradle: https://github.com/mozilla/rust-android-gradle
 
 **Windows**: 
 
@@ -47,6 +47,8 @@ Use Rust-Android-Gradle: https://github.com/mozilla/rust-android-gradle
 **Linux**:
 
 `./gradlew :module:zipRelease`
+
+And then, artifact will put in `out`
 
 ## Problem
 
